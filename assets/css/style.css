@@ -158,6 +158,25 @@ hr {
     justify-content: center;
 }
 
+/* Meetup Times */
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center / cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#times h3 {
+    color: #fafafa;
+}
 /* Footer */
 #social-networks {
     text-align: center;
@@ -208,6 +227,23 @@ hr {
         right: 50px;
     }
 
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical > div,
+    #benefits-mental > div {
+        width: 75%
+    }
+
+    #benefits-mental > div {
+        text-align: end;
+        align-self: flex-end;
+    }
+
 }
 
 /* Media Query: laptops and upwards (992px) */
@@ -215,4 +251,33 @@ hr {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+}
+
+/* Media Query: Screens 1200px and wider */
+@media screen and (min-width: 1200px) {
+     #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits > div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+
 }

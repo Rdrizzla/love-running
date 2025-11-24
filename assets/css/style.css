@@ -18,7 +18,7 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-h1. h2, h3 {
+h1, h2, h3 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -111,6 +111,34 @@ main {
 
 #cover-text > h2, #cover-text > h3 {
     color: #efffff;
+}
+
+/*Landing page content */
+#reasons {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#reasons h2 {
+    font-size: 280%;
+    margin-bottom: 20px;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+#benefits-physical > div, #benefits-mental > div {
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
 }
 
 /* Footer */
